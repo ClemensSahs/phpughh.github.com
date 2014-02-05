@@ -14,3 +14,18 @@ casper.test.begin('check meetup widget', function suite(test) {
         test.done();
     });
 });
+
+
+casper.test.begin('check 2 meetup widget', function suite(test) {
+    casper
+
+    .start('http://127.0.0.1:4000/index.html')
+
+    .then(function() {
+        test.assertExists('.next');
+    })
+
+    .run(function() {
+        test.done();
+    });
+});
