@@ -10,6 +10,6 @@ notifications:
   email: false
 
 script:
-  - bundle exec jekyll serve --detach --port 4000 > /dev/null 2>&1
+  - bundle exec jekyll serve --detach --port 4000
   - sleep 3
-  - ./node_modules/.bin/casperjs test tests/test_*.js > /dev/null 2>&1
+  - ./node_modules/.bin/casperjs test tests/test_*.js > /dev/null
